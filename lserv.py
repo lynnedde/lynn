@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#https://www.geeksforgeeks.org/socket-programming-python/
 from socket import *
 from time import *
 
