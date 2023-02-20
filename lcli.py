@@ -18,6 +18,7 @@ clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect(('', PROXY_PORT))
 
 # Set the starting time
+#https://www.freecodecamp.org/news/python-get-current-time/
 start_time = time.time()
 
 # Send the HTTP request to the proxy server
@@ -35,6 +36,7 @@ rtt = time.time() - start_time
 print(f'{time.strftime("%Y-%m-%d %H:%M:%S")} - Round-trip time: {rtt:.3f} seconds')
 
 # Get the physical MAC address of the machine
+#https://www.codespeedy.com/how-to-get-mac-address-of-a-device-in-python/
 mac_address = uuid.getnode()
 mac_address = ':'.join(['{:02x}'.format((mac_address >> i) & 0xff) for i in range(0, 48, 8)])
 
