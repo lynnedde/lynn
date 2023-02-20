@@ -7,7 +7,7 @@ import uuid
 # Set the IP address and port number of the proxy server
 PROXY_PORT = 1025
 
-# Prompt the user for the destination server IP address
+# Ask the user for the destination server IP address
 SERVER_IP = input("Enter the IP address of the server: ")
 
 # Construct the HTTP request to be sent to the proxy server
