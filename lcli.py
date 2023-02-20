@@ -23,7 +23,7 @@ start_time = time.time()
 # Send the HTTP request to the proxy server
 clientSocket.sendall(REQUEST.encode())
 
-# Receive the response from the proxy server (which may arrive in multiple packets)
+# Receive the response from the proxy server
 data = clientSocket.recv(4096)
 
 # Convert the response from bytes to text
